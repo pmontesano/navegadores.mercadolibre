@@ -45,10 +45,13 @@
     <!-- <link rel="stylesheet" href="https://a248.e.akamai.net/secure.mlstatic.com/org-img/ch/mobile/1.1.1/chico.min.css"/> -->
 
     <!-- The main sheet. Use a descriptive name -->
+    <link rel="stylesheet" href="browser-update__small.css"/>
     <link rel="stylesheet" href="base__small.css"/>
+    <link rel="stylesheet" media="(min-width: 768px)" href="browser-update__large.css"/>
     <link rel="stylesheet" media="(min-width: 768px)" href="base__large.css"/>
     <!--[if lt IE 9]>
         <link rel="stylesheet" href="base__large.css"/>
+        <link rel="stylesheet" href="browser-update__large.css"/>
     <![endif]-->
 </head>
 
@@ -60,7 +63,7 @@
         <header role="banner" class="ml-header">
             <div class="ml-bounds">
                 <!-- Page title (small devices) -->
-                <h1 class="ml-title">Page title</h1>
+                <h1 class="ml-title">¡Actualiza hoy tu navegador!</h1>
 
                 <!-- Header buttons (small devices) -->
                 <a class="ml-header-btn" href="#">Back</a>
@@ -93,7 +96,44 @@
 
         <!-- Add `ch-wizard` or `ch-box-lite` classname if you are using `ml-contextual` -->
         <main role="main" class="ml-bounds">
-            Your content right here.
+            <h1 class="browsers-title">¡Actualiza hoy tu navegador!</h1>
+            <ul class="browsers-list">
+                <!-- #chrome -->
+                <li id="chrome">
+                    <a href="http://www.google.com/chrome" title="Google Chrome">
+                        <div class="icon"></div>
+                        <h2>Google Chrome</h2>
+                    </a>
+                </li>
+                <!-- #firefox -->
+                <li id="firefox">
+                    <a href="http://www.firefox.com/" title="Mozilla Firefox">
+                        <div class="icon"></div>
+                        <h2>Mozilla Firefox</h2>
+                    </a>
+                </li>
+                <!-- #safari -->
+                <li id="safari">
+                    <a href="http://www.apple.com/safari/" title="Apple Safari">
+                        <div class="icon"></div>
+                        <h2>Safari</h2>
+                    </a>
+                </li>
+                <!-- #opera -->
+                <li id="opera">
+                    <a href="http://www.opera.com/" title="Opera">
+                        <div class="icon"></div>
+                        <h2>Opera</h2>
+                    </a>
+                </li>
+                <!-- #ie -->
+                <li id="ie">
+                    <a href="http://windows.microsoft.com/ie" title="Microsoft Internet Explorer">
+                        <div class="icon"></div>
+                        <h2>Internet Explorer</h2>
+                    </a>
+                </li>
+            </ul>
         </main>
     </div>
 

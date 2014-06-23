@@ -1,0 +1,15 @@
+/**
+ * Browsers update large devices
+ * @description: Layout page to browsers update
+ */
+
+ .browsers-title {
+ 	display: block;
+	text-align: center;
+	margin: 30px;
+}
+
+.browsers-list li {
+	width: 15%;
+}
+

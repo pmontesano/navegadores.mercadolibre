@@ -1,0 +1,84 @@
+/**
+ * Browsers update
+ * @description: Layout page to browsers update
+ */
+
+
+/* Main */
+
+.browsers-title {
+	display: none;
+}
+
+.browsers-list:before, .browsers-list:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.browsers-list {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.browsers-list li {
+	width: 100%;
+	display: inline-block;
+}
+
+.browsers-list li .icon {
+	width: 100px;
+	height: 115px;
+	margin: 0 auto 20px;
+	background: url(sprite.png) no-repeat;
+}
+
+.browsers-list li#chrome .icon {
+	background-position: 0 0;
+}
+
+.browsers-list li#firefox .icon {
+	background-position: -100px 0;
+}
+
+.browsers-list li#opera .icon {
+	background-position: -200px 0;
+}
+
+.browsers-list li#safari .icon {
+	background-position: -305px 0;
+}
+
+.browsers-list li#ie .icon {
+	background-position: -400px 0;
+}
+
+.browsers-list li h2 {
+	font-size: 16px;
+}
+
+.browsers-list li a:hover, .browsers-list li a:hover .icon {
+	-webkit-transition: all .8s;
+	-moz-transition: all .8s;
+	-o-transition: all .8s;
+	transition: all .8s;
+}
+
+.browsers-list li a:hover {
+	background: rgba(200,200,200,.3);
+	-webkit-transform: scale(1.05,1.05);
+	-moz-transform: scale(1.05,1.05);
+	-o-transform: scale(1.05,1.05);
+	transform: scale(1.05,1.05);
+}
+
+.browsers-list li a:link,
+.browsers-list li a:visited {
+	padding: 30px 10px 10px;
+	display: block;
+	overflow: hidden;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
