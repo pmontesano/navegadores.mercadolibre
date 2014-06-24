@@ -33,6 +33,7 @@ body {
 	display: inline-block;
 	text-align: center;
 	width: 90%;
+	vertical-align: top;
 }
 
 .browsers-list li .icon {
@@ -63,8 +64,7 @@ body {
 }
 
 .browsers-list li h2 {
-	font-size: 1.3em;
-	font-size: 1.4vw;
+	font-size: 1.2em;
 }
 
 .browsers-list li:hover, .browsers-list li:hover .icon {
