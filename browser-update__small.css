@@ -4,17 +4,19 @@
  */
 
 
-/* Main */
+/* Base
+---------------------------------------------------------------*/
+
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	background: #f7f7f7;
+}
 
 .browsers-title {
 	display: none;
-}
-
-.browsers-list:before, .browsers-list:after {
-	content: "\0020";
-	display: block;
-	height: 0;
-	visibility: hidden;
 }
 
 .browsers-list {
@@ -23,15 +25,21 @@
 }
 
 .browsers-list li {
-	width: 100%;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background: #FFF;
+	border-radius: 5px;
+	border: solid 1px #CCC;
 	display: inline-block;
+	text-align: center;
+	width: 90%;
 }
 
 .browsers-list li .icon {
-	width: 100px;
-	height: 115px;
-	margin: 0 auto 20px;
 	background: url(sprite.png) no-repeat;
+	height: 115px;
+	margin: auto;
+	width: 100px;
 }
 
 .browsers-list li#chrome .icon {
@@ -55,18 +63,18 @@
 }
 
 .browsers-list li h2 {
-	font-size: 16px;
+	font-size: 1.3em;
+	font-size: 1.4vw;
 }
 
-.browsers-list li a:hover, .browsers-list li a:hover .icon {
-	-webkit-transition: all .8s;
-	-moz-transition: all .8s;
-	-o-transition: all .8s;
-	transition: all .8s;
+.browsers-list li:hover, .browsers-list li:hover .icon {
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
 }
 
-.browsers-list li a:hover {
-	background: rgba(200,200,200,.3);
+.browsers-list li:hover {
 	-webkit-transform: scale(1.05,1.05);
 	-moz-transform: scale(1.05,1.05);
 	-o-transform: scale(1.05,1.05);
